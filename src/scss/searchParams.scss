@@ -1,0 +1,34 @@
+.queryInput {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Tooltip text */
+.queryInput .tooltip-text {
+  visibility: hidden;
+  width: max-content;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #6A1B4D;
+  color: #342525;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.queryInput:hover .tooltip-text {
+  visibility: visible;
+}
+
+.hide {
+  display: none;
+}
