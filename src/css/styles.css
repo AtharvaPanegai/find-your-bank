@@ -1,0 +1,146 @@
+.raleway {
+  font-family: Raleway, sans-serif;
+}
+
+.active {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+main {
+  margin: 35px;
+}
+
+.drawer {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
+}
+
+.drawer .closeButton {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drawer .drawerItems {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.drawer .drawerItems span {
+  display: block;
+}
+
+.drawer .drawerItems ul {
+  list-style: none;
+  width: 80%;
+}
+
+.drawer .drawerItems ul li {
+  font-size: 22px;
+  padding: 20px 0;
+}
+
+.showDrawer {
+  left: 0;
+}
+
+.desktopDisplay {
+  display: none;
+}
+
+.mobileDisplay {
+  display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  .drawer {
+    width: 50vw;
+  }
+  .desktopDisplay {
+    display: block;
+  }
+  .mobileDisplay {
+    display: none;
+  }
+}
+
+select {
+  color: #097258;
+  font-size: 16px;
+  border-color: #09bd90;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 600;
+}
+
+.tableRow:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+.paperData {
+  padding: 30px;
+}
+
+.notFound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.notFound img {
+  width: 75vw;
+  max-width: 600px;
+}
+
+.notFound h1 {
+  font-size: 22px;
+}
+/*# sourceMappingURL=styles.css.map */
