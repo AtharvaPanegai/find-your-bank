@@ -7,7 +7,6 @@ import { useSelector, useDispatch } from "react-redux";
 import PaginationComponent from "../components/Pagination";
 import updateLoading from "../actFunctions/updateLoading";
 import updateError from "../actFunctions/updateError";
-import Navbar from "./Navbar";
 
 
 function AllBanks() {
@@ -64,7 +63,6 @@ function AllBanks() {
 
   return (
     <>
-      <Navbar />
       <h1>All Banks</h1>
       <Divider />
       <SearchBar />
